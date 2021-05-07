@@ -15,6 +15,7 @@
 		587FDCBC26455AB80037E606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587FDCBA26455AB80037E606 /* LaunchScreen.storyboard */; };
 		587FDCC726455AB80037E606 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587FDCC626455AB80037E606 /* ToDoTests.swift */; };
 		587FDCD226455AB90037E606 /* ToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587FDCD126455AB90037E606 /* ToDoUITests.swift */; };
+		587FDCE126456EB50037E606 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587FDCE026456EB50037E606 /* TodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		587FDCCD26455AB90037E606 /* ToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		587FDCD126455AB90037E606 /* ToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITests.swift; sourceTree = "<group>"; };
 		587FDCD326455AB90037E606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587FDCE026456EB50037E606 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		587FDCAE26455AB80037E606 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				587FDCDF26456EA00037E606 /* models */,
 				587FDCAF26455AB80037E606 /* AppDelegate.swift */,
 				587FDCB126455AB80037E606 /* SceneDelegate.swift */,
 				587FDCB326455AB80037E606 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				587FDCD326455AB90037E606 /* Info.plist */,
 			);
 			path = ToDoUITests;
+			sourceTree = "<group>";
+		};
+		587FDCDF26456EA00037E606 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				587FDCE026456EB50037E606 /* TodoItem.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				587FDCB426455AB80037E606 /* ViewController.swift in Sources */,
 				587FDCB026455AB80037E606 /* AppDelegate.swift in Sources */,
+				587FDCE126456EB50037E606 /* TodoItem.swift in Sources */,
 				587FDCB226455AB80037E606 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
