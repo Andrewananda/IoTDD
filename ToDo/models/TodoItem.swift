@@ -10,4 +10,7 @@ import Foundation
 
 struct TodoItem {
     let title: String
+    let description: String?
+    let timestamp: Double?
+    let location: Location?
 }

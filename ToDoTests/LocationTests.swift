@@ -1,5 +1,5 @@
 //
-//  ToDoTests.swift
+//  LocationTests.swift
 //  ToDoTests
 //
 //  Created by Andrew Ananda on 07/05/2021.
@@ -10,7 +10,7 @@ import CoreLocation
 
 @testable import ToDo
 
-class ToDoTests: XCTestCase {
+class LocationTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,17 +19,15 @@ class ToDoTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
     
-    func test_Init_WhenGivenLocation_SetLocation() {
+    func test_Init_SetsCoordinate() {
         let coordinate = CLLocationCoordinate2D(latitude: 1, longitude: 2)
-        let location = Location(name: "Nairobi", coordinate: coordinate)
-        let item = TodoItem(title: "Test", description: "Finish up all the tests", timestamp: 0.0, location: location)
+        let location = Location(name: "", coordinate: coordinate)
         
-        XCTAssertEqual(item.location?.name, location.name, "Should display location name")
-        
+        XCTAssertEqual(location.coordinate?.latitude, coordinate.latitude)
+        XCTAssertEqual(location.coordinate?.longitude, coordinate.longitude)
     }
-
+//
 //    func testExample() throws {
 //        // This is an example of a functional test case.
 //        // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -41,6 +39,5 @@ class ToDoTests: XCTestCase {
 //            // Put the code you want to measure the time of here.
 //        }
 //    }
-    
 
 }
